@@ -1,28 +1,52 @@
-<!DOCTYPE html>
+    <!-- la etiqueta DOCTYPE el objetivo es decir que no esta diciendo que estamos trabajando con html -->   
+<!DOCTYPE html> 
 <html lang="es">
+
+
+<!-- esto es la infromacion que necesita el navegador -->   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Pedro Roda</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <title>Portafolio de Pedro Roda</title>    <!-- la etiqueta title es el titulo de tu naveador --> 
+    
+    <link rel="stylesheet" href="style.css">   <!-- la etiqueta link es el que le da estilo a tu pagina web --> 
 </head>
+
+
+<!-- El body es el cuerpo -->
 <body>
+
+    <!-- header es el encabezado de la pagina web -->
    <header>
+     <!-- etiqueta nav es algo semantica para envolver enlace de navegacion  -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
+
     </nav>
+
    </header>
+
+
+
    <section>
     <h1>Bienvenido a mi Portafolio</h1>
     <!-- <p> define un párrafo de texto [6] -->
     <p>Hola, soy Pedro Roda, un desarrollador web apasionado por crear soluciones innovadoras. En este portafolio encontrarás algunos de mis proyectos más destacados, así como información sobre mi experiencia y habilidades.</p>
    </section>
-   <section id="proyectos de brayan miguel">
+   <button id="ver-proyectos">Ver mis proyectos</button>
+    <button id="btn-tema">Cambiar tema</button>
+   
+
+
+   <section id="proyectos">
+    
     <h2> Mis proyectos</h2>
+
     <div id="contenedor-proyectos">
         <div class="proyecto-card">
             <h3> proyecto 1</h3>
@@ -41,10 +65,19 @@
             <p>Descripción breve del proyecto 4.</p>
         </div>
     </div>
+
    </section>
+
+
+
+    <!-- esto es para lo ultimo tipo como derechos -->
    <footer>
     <p>&copy; 2024 Pedro Roda. Todos los derechos reservados.</p>
    </footer>
+
 </body>
+
+<script src="script.js"></script>
+
 </html>
  

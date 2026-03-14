@@ -3,48 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Pedro Roda</title>
+    <title>Portafolio de Brayan Fiengo Alaca</title>
     <link rel="stylesheet" href="portafolioStyle.css">
 </head>
+
 <body>
-   <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-   </header>
-   <section>
-    <h1>Bienvenido a mi Portafolio</h1>
-    <!-- <p> define un párrafo de texto [6] -->
-    <p>Hola, soy Pedro Roda, un desarrollador web apasionado por crear soluciones innovadoras. En este portafolio encontrarás algunos de mis proyectos más destacados, así como información sobre mi experiencia y habilidades.</p>
-   </section>
-   <section id="proyectos de mi entorno">
-    <h2> Mis proyectos</h2>
-    <div id="contenedor-proyectos">
-        <div class="proyecto-card">
-            <h3> proyecto 1</h3>
-            <p>Descripción breve del proyecto 1.</p>
+
+  <!-- NUEVO: contenedor que divide la pantalla en 2 -->
+  <div class="layout">
+
+    <!-- COLUMNA IZQUIERDA (sidebar) -->
+    <aside class="sidebar">
+        <div class="sidebar-avatar">
+            <img src="tu-foto.jpg" alt="Foto de perfil">
         </div>
-         <div class="proyecto-card">
-            <h3> proyecto 2</h3>
-            <p>Descripción breve del proyecto 2.</p>
+        <h2 class="sidebar-nombre">BRAYAN FIENGO ALACA</h2>
+        <p class="sidebar-cargo">Ingeniero de Sistemas</p>
+
+        <!-- ABOUT ME -->
+        <div class="sidebar-bloque">
+            <div class="sidebar-titulo-bloque">
+                <span class="sb-icon">👤</span> SOBRE MÍ
+            </div>
+            <p class="sidebar-texto">
+                Ingeniero de Sistemas con enfoque en desarrollo móvil con Flutter y backend con Node.js. Busco mi primera oportunidad como desarrollador junior.
+            </p>
         </div>
-         <div class="proyecto-card">
-            <h3> proyecto 3</h3>
-            <p>Descripción breve del proyecto 3.</p>
+
+        <!-- CONTACTO -->
+        <div class="sidebar-bloque">
+            <div class="sidebar-titulo-bloque">
+                <span class="sb-icon">📋</span> CONTACTO
+            </div>
+            <ul class="sidebar-lista">
+                <li>📞 +591 7000-0000</li>
+                <li>✉ brayan@email.com</li>
+                <li>🌐 github.com/brayan</li>
+                <li>📍 Santa Cruz, Bolivia</li>
+            </ul>
         </div>
-         <div class="proyecto-card">
-            <h3> proyecto 4</h3>
-            <p>Descripción breve del proyecto 4.</p>
+
+        <!-- REDES -->
+        <div class="sidebar-bloque">
+            <div class="sidebar-titulo-bloque">
+                <span class="sb-icon">🔗</span> SÍGUEME
+            </div>
+            <ul class="sidebar-lista">
+                <li><a href="#" class="sidebar-link">GitHub</a></li>
+                <li><a href="#" class="sidebar-link">LinkedIn</a></li>
+            </ul>
         </div>
-    </div>
-   </section>
-   <footer>
-    <p>&copy; 2024 Pedro Roda. Todos los derechos reservados.</p>
-   </footer>
+
+        <!-- HABILIDADES -->
+        <div class="sidebar-bloque">
+            <div class="sidebar-titulo-bloque">
+                <span class="sb-icon">⚡</span> HABILIDADES
+            </div>
+            <div class="sidebar-skills">
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Dart</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </div>
+
+        <p class="sidebar-copy">&copy; 2026 Brayan Fiengo</p>
+    </aside>
+
+    <!-- COLUMNA DERECHA todo lo que aprendi con el profesor en clase() -->
+    <div class="contenido">
+
+      <header>
+        <nav>
+            <ul>
+                <li><a href="portafolio.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button id="btn-tema">Cambiar tema</button>  
+        </nav>
+      </header>
+
+      <section>
+        <h1>Bienvenido a mi Portafolio</h1>
+        <p>Hola, soy Brayan Fiengo Alaca, Ingeniero de Sistemas titulado con formación en desarrollo de software. Durante mi etapa universitaria me enfoqué principalmente en el desarrollo de aplicaciones móviles utilizando Flutter, además de trabajar con tecnologías como Node.js para backend.
+        Actualmente me encuentro reforzando mis habilidades técnicas y en búsqueda de una oportunidad laboral como desarrollador junior.</p>
+      </section>
+
+      <section id="proyectos de mi entorno">
+        <h2>Mis proyectos</h2>
+        <div id="contenedor-proyectos">
+            <div class="proyecto-card">
+                <h3>proyecto 1</h3>
+                <p>Descripción breve del proyecto 1.</p>
+            </div>
+            <div class="proyecto-card">
+                <h3>proyecto 2</h3>
+                <p>Descripción breve del proyecto 2.</p>
+            </div>
+            <div class="proyecto-card">
+                <h3>proyecto 3</h3>
+                <p>Descripción breve del proyecto 3.</p>
+            </div>
+            <div class="proyecto-card">
+                <h3>proyecto 4</h3>
+                <p>Descripción breve del proyecto 4.</p>
+            </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Brayan Fiengo. Todos los derechos reservados.</p>
+      </footer>
+
+    </div><!-- fin .contenido -->
+
+  </div><!-- fin .layout -->
+
+<script src="portafolioScript.js"></script>
 </body>
-</html>
  
+</html>

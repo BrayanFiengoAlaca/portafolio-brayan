@@ -1,61 +1,112 @@
+/* esto son los bordes tengas 0 si cambio todos los tamaños cambian*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*selector de TIPO (etiqueta): afectar a todo el cuerpo de la pagina*/
+
+/*selector de TIPO (etiqueta): afectar a todo el cuerpo de la pagina*/ 
 body{
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    line-height: 1.6; 
     background: #f5f5f5;    
 }
+
+
+
+
+
 /*selector de TIPO aplicar estilo al encabezado*/
 header{
     background: #333;
-    color: #fff;
+    color: #fff; 
     padding: 20px;
     text-align: center;
 }
  
-/*selector descendiente*/
+/*selector descendiente */
 nav ul{
     list-style: none;
 }
-/*selector de tipo para los elementos li dentro del nav ul*/
+
+
+/*selector de tipo para los elementos li dentro del nav ul
+  posicion de la letras del encabezado 
+  para que las letras esten en una sola fila, tambien tiene otras funciones
+*/
 nav ul li{
     display: inline-block;
     margin: 0 20px;
 }
-/*selector de los enlaces (a) dentro del nav */
- 
+
+
+/*selector de los enlaces (a) dentro del nav 
+  esto es para editar las letras del encabezado
+*/
 nav ul li a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
+
+/* mueven los botones DEL ENCABEZADO a la izquierda */
+/*nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
  
-/*selector de CLASE selecciona cualquier elemento que tenga class="proyecto-card"*/
+/*selector de CLASE selecciona cualquier elemento que tenga class="proyecto-card"
+  es el diseño de ña tarjeta 
+*/
 .proyecto-card{
     border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    background: #fff;
+    padding: 20px; /* este es el largo de la tarjeta*/
+    margin: 20px;  /*este es el largo de la tarjeta externa*/
+    border-radius: 8px; /*esto edita los costados es decir si cooloco 50 voy a ver algo circular en vez de algo cuadrado*/
+    background: #fff; /* es el color de la tarjeta interna*/
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 300px;
+    width: 300px; /*ancho*/
 }
+
 /*selector de ID (#) seleccionar un elemento en especifico */
 #contenedor-proyectos {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*este es el encargado de cambiar la posicion es decir si no coloco nada en la pantalla aparecera tipo lista*/
+    flex-wrap: wrap; /*permite que si la lenia no cabe de largo automaticamente se mande abajo*/
     justify-content: center;
     gap: 20px;
     padding: 20px;
     background: #e0f7fa;
 }
+
+
+
+/*CAMBIA EL ESTILO DE LOS Botones*/
+#ver-proyectos {
+    background: #fff;      /* ← cambia de #333 a #fff */
+    color: #333;
+}
+
+#btn-tema {
+    /*background: transparent;   /* ← cambia de #fff a transparent */
+    color: #000000;               /* ← cambia de #333 a #fff */
+    background: #fff;
+    /*border: 2px solid #b21d1d;    /* ← cambia el borde a blanco */
+}
+
+#ver-proyectos:hover {
+    background: #555;
+}
+
+#btn-tema:hover {
+    background: #555;
+}
+
+
+
  
 /*MEDIA QUERYS*/
- 
+ /*esto hace que si el encabezado se coloque en fila al momento de achicar la pantalla*/
 @media screen and (max-width: 600px) {
     nav ul li{
         display: block;
@@ -78,7 +129,8 @@ nav ul li a{
         font-size: 1.5em;
     }
 }
- 
+
+/*modo oscuro*/
 @media (prefers-color-scheme: dark){
     body{
         background: #121212;
@@ -93,7 +145,7 @@ nav ul li a{
         color: #e0e0e0;
     }
     .proyecto-card a{
-        color: #90caf9;
+        color: #e0e0e0;
     }
 }
  
